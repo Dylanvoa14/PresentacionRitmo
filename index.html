@@ -271,6 +271,8 @@ button{font:inherit;color:inherit}
 
 /* ============ PROTOTIPO ============ */
 .proto{position:absolute;inset:0;z-index:60;background:var(--stage);padding:26px 56px 30px;display:flex;flex-direction:column;gap:20px;opacity:0;transform:scale(1.03);transition:opacity .45s ease,transform .5s var(--ease)}
+.proto[hidden]{display:none}
+.proto:not(.open){pointer-events:none}
 .proto.open{opacity:1;transform:none}
 .pt-head{display:flex;align-items:center;gap:22px;height:50px}
 .back{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:10px 18px 10px 14px;font-size:17px;font-weight:500;cursor:pointer;transition:border-color .2s}
